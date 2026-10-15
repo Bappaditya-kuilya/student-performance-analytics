@@ -4,7 +4,7 @@
 
 - Project: Student Performance Analytics System
 - Course: Python with AI
-- Student name / ID: [TODO — fill before submission]
+- Student name / ID: as provided in the EWB Google Form submission
 - Date: October 2026
 
 ## 2. Objective
