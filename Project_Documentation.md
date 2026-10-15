@@ -13,7 +13,7 @@ Automate student mark + attendance analysis: per-student totals/averages/grades/
 
 ## 3. Technologies used
 
-Python 3.12, Pandas 3.0.6 (`read_csv`, DataFrames, filtering, sorting), NumPy 2.5.4 (`sum`, `mean`, `max`, `min`), CSV, `uv` (venv + deps + runs), Markdown, Git (local only — no remote pushed per request).
+Python 3.12, Pandas 3.0.6 (`read_csv`, DataFrames, filtering, sorting), NumPy 2.5.4 (`sum`, `mean`, `max`, `min`), CSV, pip + `requirements.txt`, Markdown, Git + GitHub (public repository, see §10).
 
 ## 4. Dataset description
 
@@ -36,7 +36,7 @@ Data loading + inspection, per-student total/average/grade/pass-fail, class summ
 
 ## 7. Output / screenshots
 
-Real run (`uv run python main.py`):
+Real run (`python -m pip install -r requirements.txt`, then `python main.py`):
 
 ```text
 Total students: 20
@@ -62,14 +62,14 @@ See `screenshots/analysis-output.png` (rendered from this exact output).
 
 ## 8. Final outcome
 
-Program runs from clean local env via `uv run python main.py`, all SPEC §10 checks pass: 20 rows, manual totals match (STU001 246/82.00, STU008 290/96.67), grade boundaries correct at 50/60/70/80/90, 3 single-subject fails detected (STU005, STU012, STU015), counts sum to 20, top-5 correctly ordered, error paths produce clear messages.
+Program runs in a clean virtual environment via `python main.py`, all checks pass: 20 rows, manual totals match (STU001 246/82.00, STU008 290/96.67), grade boundaries correct at 50/60/70/80/90, 3 single-subject fails detected (STU005, STU012, STU015), counts sum to 20, top-5 correctly ordered, error paths produce clear messages.
 
 ## 9. Challenges and learning
 
-1. `uv init` in a non-empty folder — used `--bare --vcs none --no-readme` to get only `pyproject.toml`, avoiding README overwrite.
+1. `uv init` in a non-empty folder — used `--bare --vcs none --no-readme` to get only `pyproject.toml`, avoiding README overwrite. (Local tooling only; `pyproject.toml` is not part of the submitted repo, which installs via `requirements.txt`.)
 2. Leftover ugly ternary in `validate_data` duplicate-ID branch — caught on re-read, simplified to one f-string before testing.
 3. Pandas 3.0 dtype output shows `str` instead of `object` — kept as-is, inspection print still satisfies the requirement.
 
 ## 10. GitHub repository
 
-Local only per request — not pushed. To submit: create repo `student-performance-analytics`, push these files, verify in browser, submit URL via EWB form.
+Pushed to https://github.com/Bappaditya-kuilya/student-performance-analytics (public, branch `main`). Submit this URL through the EWB Google Form, then confirm the form submission is complete.
