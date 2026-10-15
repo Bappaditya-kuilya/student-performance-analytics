@@ -1,0 +1,21 @@
+student_id,name,department,python_marks,mathematics_marks,statistics_marks,attendance
+STU001,Aarav Das,CSE,82,76,88,91
+STU002,Diya Sharma,AIML,95,92,96,98
+STU003,Arjun Mehta,CSE,65,70,68,82
+STU004,Ananya Iyer,ECE,45,52,48,76
+STU005,Vikram Rao,CSE,38,72,80,85
+STU006,Sneha Kulkarni,AIML,88,84,90,94
+STU007,Rohan Verma,ECE,72,69,74,68
+STU008,Ishita Nair,CSE,98,95,97,100
+STU009,Kabir Singh,AIML,55,58,60,71
+STU010,Meera Joshi,ECE,80,80,80,88
+STU011,Aditya Rao,CSE,92,89,94,96
+STU012,Priya Nair,AIML,70,35,75,80
+STU013,Arnav Patel,CSE,60,62,58,65
+STU014,Kavya Reddy,ECE,85,90,82,93
+STU015,Sahil Khan,AIML,42,44,39,55
+STU016,Riya Gupta,CSE,78,82,75,89
+STU017,Nikhil Bose,ECE,90,88,92,97
+STU018,Tara Menon,AIML,68,74,71,84
+STU019,Dev Malhotra,CSE,50,55,52,72
+STU020,Zara Sheikh,ECE,74,79,77,90
